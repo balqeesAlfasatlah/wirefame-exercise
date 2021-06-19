@@ -1,97 +1,125 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+   padding: 0;
 }
 
-body {
-    display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    gap: 30px;
-    margin: 0 auto;
-  }
 
+body{
+  margin: 0 auto;
+}
+
+header div {
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    
+
+       
+     
+}
+
+header div , main div , footer div {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
    image{
       width: 100%;
+      
       
   }
       
   header  {
       
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color:chocolate;
-      padding-right:100px;
-    
-
+      background-color:gray;
+      width: 100%;
+      margin-bottom: 30px;
+     
+      
   }
-
-header img{
-   margin: 0 130px;
-
+      
     
-}
-
-header nav{
-    padding-right:160px;
+  header nav{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
 }
 
 header a{
     text-decoration: none;
     padding:50px;
     text-align: center;
-    
+    color: white;
     
 }
+
 
 
 section{
-    max-width: 900px;
-    margin: 60px auto 40px;
+   margin-bottom: 30px;
+   
 }
 
 
 
-section :nth-child(2) div {
+section:nth-child(2)  {
+
     display: flex;
     justify-content: space-between;
+   
+    
     
     
 }
 
 
-
-
-
-section :nth-of-type(3){
+section:nth-of-type(3) .section3{
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
 }
 
-div p ,button{
 
-    float: right;
-    width: 50%;
+
+
+
+section:nth-of-type(3) p{
+   max-height: 300px;
+}
+
+section:nth-of-type(3) img{
+ 
+    margin-right: 30px;
+   }
     
-}
+   div h4{
+
+margin-bottom: 10px;
+   }
+
 div p{
     overflow: scroll;
+    font-size: 18px;
+   color: #404040;
 }
 
-button{
-    position: absolute;
-    margin-top: 24%;
-    left: 50%;
-}
 
  div button{
-    width:10%;
-    padding:5px;
+    width:200px;
+    padding:10px;
     font-size: 20px;
+    margin-top: 20px;
     transition: width 2s;
 
 }
+img text{
+    color: white;
+}
 
  div button:hover{
-    background-color: blue;
+    background-color: black;
     color: white;
     width:100px;
 }
@@ -99,5 +127,7 @@ button{
 footer{
     width: 100%;
     height: 150px;
-    background-color: yellowgreen;
+    background-color: gray;
+    text-align: center;
+    padding-top: 30px;
 }
